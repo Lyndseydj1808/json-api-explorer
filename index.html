@@ -20,15 +20,23 @@
                 <label for="bodyInput">Body:</label>
                 <textarea id="bodyInput" name="body" rows="4" required></textarea>
             </div>
-            <button type="submit">Submit Post</button>
+            <button id="submitButton" type="submit">Submit Post</button>
         </form>
         <div id="formError"></div>
         <div id="formSuccess"></div>
     </section>
 
     <section>
+        <div>
+            <label for="filterInput">Filter Posts:</label>
+            <input type="text" id="filterInput" placeholder="Filter posts by keyword..."/>
+            </div>
+    </section>
+
+    <section>
         <h2>Posts</h2>
         <button id="fetchButton">Fetch Posts</button>
+        <div id="spinner" style="display: none;">Loading...</div>
         <div id="error"></div>
         <div id="postList"></div>
     </section>
